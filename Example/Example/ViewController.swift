@@ -19,5 +19,12 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("Selected \(tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)...")
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+
+    }
 
 }

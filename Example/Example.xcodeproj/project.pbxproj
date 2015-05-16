@@ -16,6 +16,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		882754BE1B080E6800380554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88FE29561B0806C200A11178;
+			remoteInfo = JSQActivityKit;
+		};
+		882754C01B080E6800380554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88FE29611B0806C200A11178;
+			remoteInfo = JSQActivityKitTests;
+		};
 		88FE29921B08088B00A11178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88FE29741B08088B00A11178 /* Project object */;
@@ -26,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSQActivityKit.xcodeproj; path = ../JSQActivityKit/JSQActivityKit.xcodeproj; sourceTree = "<group>"; };
 		88FE297C1B08088B00A11178 /* JSQActivityKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQActivityKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FE29801B08088B00A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FE29811B08088B00A11178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,12 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		882754BA1B080E6800380554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				882754BF1B080E6800380554 /* JSQActivityKit.framework */,
+				882754C11B080E6800380554 /* JSQActivityKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		88FE29731B08088B00A11178 = {
 			isa = PBXGroup;
 			children = (
 				88FE297E1B08088B00A11178 /* Example */,
 				88FE29941B08088B00A11178 /* ExampleTests */,
 				88FE297D1B08088B00A11178 /* Products */,
+				882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +204,12 @@
 			mainGroup = 88FE29731B08088B00A11178;
 			productRefGroup = 88FE297D1B08088B00A11178 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 882754BA1B080E6800380554 /* Products */;
+					ProjectRef = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88FE297B1B08088B00A11178 /* Example */,
@@ -186,6 +217,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		882754BF1B080E6800380554 /* JSQActivityKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSQActivityKit.framework;
+			remoteRef = 882754BE1B080E6800380554 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		882754C11B080E6800380554 /* JSQActivityKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSQActivityKitTests.xctest;
+			remoteRef = 882754C01B080E6800380554 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88FE297A1B08088B00A11178 /* Resources */ = {
@@ -345,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = JSQActivityKit;
 			};
@@ -355,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = JSQActivityKit;
 			};
@@ -375,7 +425,7 @@
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQActivityKit.app/JSQActivityKit";
 			};
 			name = Debug;
 		};
@@ -390,7 +440,7 @@
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQActivityKit.app/JSQActivityKit";
 			};
 			name = Release;
 		};
