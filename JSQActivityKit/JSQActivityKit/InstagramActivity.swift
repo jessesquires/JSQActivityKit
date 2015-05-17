@@ -18,7 +18,7 @@
 
 import UIKit
 
-///  An Instagram sharing activity.
+///  An Instagram sharing activity subclass of `UIActivity`.
 public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDelegate {
 
     // MARK: Typealiases
@@ -30,8 +30,7 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: Properties
 
-    ///  The display title for the activity.
-    public let title: String
+    private let title: String
 
     private let presenter: DocumentInteractionControllerPresenter
 

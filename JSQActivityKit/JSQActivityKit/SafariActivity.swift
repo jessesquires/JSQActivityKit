@@ -18,13 +18,12 @@
 
 import UIKit
 
-///  A Safari action activity.
+///  A Safari action activity subclass of `UIActivity`.
 public class SafariActivity: UIActivity {
 
     // MARK: Properties
 
-    ///  The display title for the activity.
-    public let title: String
+    private let title: String
 
     private var url: NSURL?
 
@@ -83,7 +82,7 @@ public class SafariActivity: UIActivity {
         if let url = url {
             completed = UIApplication.sharedApplication().openURL(url)
         }
-        
+
         activityDidFinish(completed)
     }
     
