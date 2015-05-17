@@ -23,12 +23,18 @@ public class SafariActivity: UIActivity {
 
     // MARK: Properties
 
+    ///  The display title for the activity.
     public let title: String
 
     private var url: NSURL?
 
     // MARK: Initialization
 
+    ///  Constructs a new `SafariActivity` instance with the specified title.
+    ///
+    ///  :param: title The title to display for the activity. The default value is `"Open in Safari"`.
+    ///
+    ///  :returns: A new `SafariActivity` instance.
     public init(title: String = "Open In Safari") {
         self.title = title
     }

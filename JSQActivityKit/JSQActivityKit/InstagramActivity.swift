@@ -23,12 +23,17 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: Typealiases
 
+    ///  A closure that presents a document interaction controller.
+    ///
+    ///  :returns: The document interaction controller to present.
     public typealias DocumentInteractionControllerPresenter = (UIDocumentInteractionController) -> Void
 
     // MARK: Properties
 
+    ///  The display title for the activity.
     public let title: String
 
+    ///  The closure with which the activity presents a document interaction controller.
     public let presenter: DocumentInteractionControllerPresenter
 
     private var documentInteractionController: UIDocumentInteractionController?
@@ -39,6 +44,12 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: Initialization
 
+    ///  Constructs a new `InstagramActivity` instance with the specified title and presenter.
+    ///
+    ///  :param: title     The title to display for the activity. The default value is `"Instagram"`.
+    ///  :param: presenter The closure to call to present the document interaction controller.
+    ///
+    ///  :returns: A new `InstagramActivity` instance.
     public init(title: String = "Instagram", presenter: DocumentInteractionControllerPresenter) {
         self.title = title
         self.presenter = presenter
