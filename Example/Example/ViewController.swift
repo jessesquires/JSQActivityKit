@@ -24,7 +24,6 @@ import JSQActivityKit
 class ViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("Selected \(tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)...")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         var items = [AnyObject]()
@@ -46,6 +45,8 @@ class ViewController: UITableViewController {
 
         default: break
         }
+
+        println("Selected \(activities.first)...")
 
         let controller = UIActivityViewController(activityItems: items, applicationActivities: activities)
         controller.popoverPresentationController?.sourceView = tableView
