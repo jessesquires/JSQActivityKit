@@ -50,7 +50,7 @@ More information on the [gh-pages](https://github.com/jessesquires/JSQActivityKi
 import JSQActivityKit
 ````
 
-See the included example app.
+See the included example app, open `JSQActivityKit.xcworkspace`.
 
 ## Contribute
 
