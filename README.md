@@ -20,15 +20,37 @@ Current activities:
 
 ## Installation
 
-> TODO:
+#### [CocoaPods](http://cocoapods.org)
+
+````ruby
+use_frameworks!
+
+# For latest release in cocoapods
+pod 'JSQActivityKit'  
+
+# Feeling adventurous? Get the latest on develop
+pod 'JSQActivityKit', :git => 'https://github.com/jessesquires/JSQActivityKit.git', :branch => 'develop'
+````
+
+#### [Carthage](https://github.com/Carthage/Carthage)
+
+````bash
+github "jessesquires/JSQActivityKit"
+````
 
 ## Documentation
 
-> TODO:
+Read the fucking [docs][docsLink]. Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
+
+More information on the [gh-pages](https://github.com/jessesquires/JSQActivityKit/tree/gh-pages) branch.
 
 ## Getting Started
 
-> TODO:
+````swift
+import JSQActivityKit
+````
+
+See the included example app.
 
 ## Contribute
 
