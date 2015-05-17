@@ -72,5 +72,5 @@ public class SafariActivity: UIActivity {
 
         activityDidFinish(completed)
     }
-
+    
 }

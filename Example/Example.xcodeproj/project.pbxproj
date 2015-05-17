@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		884477471B081F7700EC3A9B /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884477441B081F6000EC3A9B /* JSQActivityKit.framework */; };
 		884477481B081F7700EC3A9B /* JSQActivityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 884477441B081F6000EC3A9B /* JSQActivityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		886AE2B81B084AD40051D47B /* kitten.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 886AE2B71B084AD40051D47B /* kitten.jpeg */; };
 		88FE29821B08088B00A11178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29811B08088B00A11178 /* AppDelegate.swift */; };
 		88FE29841B08088B00A11178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29831B08088B00A11178 /* ViewController.swift */; };
 		88FE29871B08088B00A11178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FE29851B08088B00A11178 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSQActivityKit.xcodeproj; path = ../JSQActivityKit/JSQActivityKit.xcodeproj; sourceTree = "<group>"; };
+		886AE2B71B084AD40051D47B /* kitten.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpeg; sourceTree = "<group>"; };
 		88FE297C1B08088B00A11178 /* ActivityKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FE29801B08088B00A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FE29811B08088B00A11178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,11 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				88FE29811B08088B00A11178 /* AppDelegate.swift */,
-				88FE29831B08088B00A11178 /* ViewController.swift */,
-				88FE29851B08088B00A11178 /* Main.storyboard */,
 				88FE29881B08088B00A11178 /* Images.xcassets */,
+				886AE2B71B084AD40051D47B /* kitten.jpeg */,
 				88FE298A1B08088B00A11178 /* LaunchScreen.xib */,
+				88FE29851B08088B00A11178 /* Main.storyboard */,
 				88FE297F1B08088B00A11178 /* Supporting Files */,
+				88FE29831B08088B00A11178 /* ViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				88FE29871B08088B00A11178 /* Main.storyboard in Resources */,
 				88FE298C1B08088B00A11178 /* LaunchScreen.xib in Resources */,
+				886AE2B81B084AD40051D47B /* kitten.jpeg in Resources */,
 				88FE29891B08088B00A11178 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

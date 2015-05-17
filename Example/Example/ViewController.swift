@@ -27,23 +27,26 @@ class ViewController: UITableViewController {
         println("Selected \(tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)...")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+        var items = [AnyObject]()
+        var activities = [UIActivity]()
+
         switch indexPath.row {
         case 0:
-            let controller = activityViewController([ NSURL(string: "http://jessesquires.com")! ], activities: [ SafariActivity() ])
-            presentViewController(controller, animated: true, completion: nil)
-
+            items.append(NSURL(string: "http://jessesquires.com")!)
+            activities.append(SafariActivity())
         case 1:
-            let controller = activityViewController([ UIImage() ], activities: [ InstagramActivity() ])
-            presentViewController(controller, animated: true, completion: nil)
+            items.append(UIImage(named: "kitten.jpeg")!)
+            items.append("#Kittens of Instagram.\nhttp://placekitten.com/g/600/600")
+            activities.append(InstagramActivity(presenter: { (controller: UIDocumentInteractionController) -> Void in
+                controller.presentOpenInMenuFromRect(tableView.cellForRowAtIndexPath(indexPath)!.frame, inView: tableView, animated: true)
+            }))
 
-        default:
-            break
+        default: break
         }
 
-    }
-
-    private func activityViewController(items: [AnyObject], activities: [UIActivity]) -> UIActivityViewController {
         let controller = UIActivityViewController(activityItems: items, applicationActivities: activities)
+        controller.popoverPresentationController?.sourceView = tableView
+        controller.popoverPresentationController?.sourceRect = tableView.cellForRowAtIndexPath(indexPath)!.frame
 
         controller.completionWithItemsHandler = { (type: String!, completed: Bool, returnedItems: [AnyObject]!, error: NSError!) -> Void in
             println("Type = \(type)")
@@ -51,8 +54,8 @@ class ViewController: UITableViewController {
             println("ReturnedItems = \(returnedItems)")
             println("Error = \(error)")
         }
-        
-        return controller
+
+        presentViewController(controller, animated: true, completion: nil)
+
     }
-    
 }
