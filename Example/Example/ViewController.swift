@@ -39,6 +39,9 @@ class ViewController: UITableViewController {
             items.append("#Kittens of Instagram.\nhttp://placekitten.com/g/600/600")
             activities.append(InstagramActivity(presenter: { (controller: UIDocumentInteractionController) -> Void in
                 controller.presentOpenInMenuFromRect(tableView.cellForRowAtIndexPath(indexPath)!.frame, inView: tableView, animated: true)
+
+                // workaround for travis-ci Xcode 6.1
+                return
             }))
 
         default: break
