@@ -33,7 +33,8 @@ class ViewController: UITableViewController {
             presentViewController(controller, animated: true, completion: nil)
 
         case 1:
-            break
+            let controller = activityViewController([ UIImage() ], activities: [ InstagramActivity() ])
+            presentViewController(controller, animated: true, completion: nil)
 
         default:
             break
