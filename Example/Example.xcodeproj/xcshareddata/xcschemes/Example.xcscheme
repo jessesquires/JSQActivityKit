@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "88FE297B1B08088B00A11178"
-               BuildableName = "JSQActivityKit.app"
+               BuildableName = "ActivityKit.app"
                BlueprintName = "Example"
                ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88FE297B1B08088B00A11178"
-            BuildableName = "JSQActivityKit.app"
+            BuildableName = "ActivityKit.app"
             BlueprintName = "Example"
             ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88FE297B1B08088B00A11178"
-            BuildableName = "JSQActivityKit.app"
+            BuildableName = "ActivityKit.app"
             BlueprintName = "Example"
             ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "88FE297B1B08088B00A11178"
-            BuildableName = "JSQActivityKit.app"
+            BuildableName = "ActivityKit.app"
             BlueprintName = "Example"
             ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>

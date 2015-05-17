@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882754C31B080EC100380554 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C21B080EC100380554 /* InstagramActivity.swift */; };
+		882754C51B080EF100380554 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C41B080EF100380554 /* SafariActivity.swift */; };
+		882754C71B080F2A00380554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882754C61B080F2A00380554 /* Images.xcassets */; };
 		88FE295C1B0806C200A11178 /* JSQActivityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FE295B1B0806C200A11178 /* JSQActivityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88FE29621B0806C200A11178 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FE29561B0806C200A11178 /* JSQActivityKit.framework */; };
 		88FE29691B0806C200A11178 /* JSQActivityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29681B0806C200A11178 /* JSQActivityKitTests.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		882754C21B080EC100380554 /* InstagramActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramActivity.swift; sourceTree = "<group>"; };
+		882754C41B080EF100380554 /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariActivity.swift; sourceTree = "<group>"; };
+		882754C61B080F2A00380554 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88FE29561B0806C200A11178 /* JSQActivityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQActivityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FE295A1B0806C200A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FE295B1B0806C200A11178 /* JSQActivityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQActivityKit.h; sourceTree = "<group>"; };
@@ -71,7 +77,10 @@
 		88FE29581B0806C200A11178 /* JSQActivityKit */ = {
 			isa = PBXGroup;
 			children = (
+				882754C61B080F2A00380554 /* Images.xcassets */,
+				882754C21B080EC100380554 /* InstagramActivity.swift */,
 				88FE295B1B0806C200A11178 /* JSQActivityKit.h */,
+				882754C41B080EF100380554 /* SafariActivity.swift */,
 				88FE29591B0806C200A11178 /* Supporting Files */,
 			);
 			path = JSQActivityKit;
@@ -192,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882754C71B080F2A00380554 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882754C51B080EF100380554 /* SafariActivity.swift in Sources */,
+				882754C31B080EC100380554 /* InstagramActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +335,7 @@
 		88FE296D1B0806C200A11178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -333,12 +346,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		88FE296E1B0806C200A11178 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -401,6 +416,7 @@
 				88FE296E1B0806C200A11178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FE296F1B0806C200A11178 /* Build configuration list for PBXNativeTarget "JSQActivityKitTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +425,7 @@
 				88FE29711B0806C200A11178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

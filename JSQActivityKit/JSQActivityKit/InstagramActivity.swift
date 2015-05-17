@@ -17,19 +17,7 @@
 //
 
 import UIKit
-import XCTest
 
-import JSQActivityKit
-
-
-class JSQActivityKitTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
+public class InstagramActivity: UIActivity {
 
 }

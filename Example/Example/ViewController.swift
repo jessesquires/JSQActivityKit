@@ -18,13 +18,40 @@
 
 import UIKit
 
+import JSQActivityKit
+
+
 class ViewController: UITableViewController {
-    
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("Selected \(tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)...")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
+
+        switch indexPath.row {
+        case 0:
+            let controller = activityViewController([ NSURL(string: "http://jessesquires.com")! ], activities: [ SafariActivity() ])
+            presentViewController(controller, animated: true, completion: nil)
+
+        case 1:
+            break
+
+        default:
+            break
+        }
 
     }
 
+    private func activityViewController(items: [AnyObject], activities: [UIActivity]) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: items, applicationActivities: activities)
+
+        controller.completionWithItemsHandler = { (type: String!, completed: Bool, returnedItems: [AnyObject]!, error: NSError!) -> Void in
+            println("Type = \(type)")
+            println("Completed = \(completed)")
+            println("ReturnedItems = \(returnedItems)")
+            println("Error = \(error)")
+        }
+        
+        return controller
+    }
+    
 }

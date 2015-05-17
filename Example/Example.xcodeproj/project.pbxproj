@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884477471B081F7700EC3A9B /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884477441B081F6000EC3A9B /* JSQActivityKit.framework */; };
+		884477481B081F7700EC3A9B /* JSQActivityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 884477441B081F6000EC3A9B /* JSQActivityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		88FE29821B08088B00A11178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29811B08088B00A11178 /* AppDelegate.swift */; };
 		88FE29841B08088B00A11178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29831B08088B00A11178 /* ViewController.swift */; };
 		88FE29871B08088B00A11178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FE29851B08088B00A11178 /* Main.storyboard */; };
@@ -16,19 +18,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		882754BE1B080E6800380554 /* PBXContainerItemProxy */ = {
+		884477431B081F6000EC3A9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+			containerPortal = 8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 88FE29561B0806C200A11178;
 			remoteInfo = JSQActivityKit;
 		};
-		882754C01B080E6800380554 /* PBXContainerItemProxy */ = {
+		884477451B081F6000EC3A9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+			containerPortal = 8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 88FE29611B0806C200A11178;
 			remoteInfo = JSQActivityKitTests;
+		};
+		884477491B081F7700EC3A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FE29551B0806C200A11178;
+			remoteInfo = JSQActivityKit;
 		};
 		88FE29921B08088B00A11178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,9 +48,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8844773D1B081DFB00EC3A9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				884477481B081F7700EC3A9B /* JSQActivityKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSQActivityKit.xcodeproj; path = ../JSQActivityKit/JSQActivityKit.xcodeproj; sourceTree = "<group>"; };
-		88FE297C1B08088B00A11178 /* JSQActivityKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQActivityKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSQActivityKit.xcodeproj; path = ../JSQActivityKit/JSQActivityKit.xcodeproj; sourceTree = "<group>"; };
+		88FE297C1B08088B00A11178 /* ActivityKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FE29801B08088B00A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FE29811B08088B00A11178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FE29831B08088B00A11178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884477471B081F7700EC3A9B /* JSQActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,11 +95,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		882754BA1B080E6800380554 /* Products */ = {
+		8844773F1B081F6000EC3A9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				882754BF1B080E6800380554 /* JSQActivityKit.framework */,
-				882754C11B080E6800380554 /* JSQActivityKitTests.xctest */,
+				884477441B081F6000EC3A9B /* JSQActivityKit.framework */,
+				884477461B081F6000EC3A9B /* JSQActivityKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,14 +110,14 @@
 				88FE297E1B08088B00A11178 /* Example */,
 				88FE29941B08088B00A11178 /* ExampleTests */,
 				88FE297D1B08088B00A11178 /* Products */,
-				882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */,
+				8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		88FE297D1B08088B00A11178 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88FE297C1B08088B00A11178 /* JSQActivityKit.app */,
+				88FE297C1B08088B00A11178 /* ActivityKit.app */,
 				88FE29911B08088B00A11178 /* ExampleTests.xctest */,
 			);
 			name = Products;
@@ -147,14 +171,16 @@
 				88FE29781B08088B00A11178 /* Sources */,
 				88FE29791B08088B00A11178 /* Frameworks */,
 				88FE297A1B08088B00A11178 /* Resources */,
+				8844773D1B081DFB00EC3A9B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8844774A1B081F7700EC3A9B /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
-			productReference = 88FE297C1B08088B00A11178 /* JSQActivityKit.app */;
+			productReference = 88FE297C1B08088B00A11178 /* ActivityKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		88FE29901B08088B00A11178 /* ExampleTests */ = {
@@ -206,8 +232,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 882754BA1B080E6800380554 /* Products */;
-					ProjectRef = 882754B91B080E6800380554 /* JSQActivityKit.xcodeproj */;
+					ProductGroup = 8844773F1B081F6000EC3A9B /* Products */;
+					ProjectRef = 8844773E1B081F6000EC3A9B /* JSQActivityKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -219,18 +245,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		882754BF1B080E6800380554 /* JSQActivityKit.framework */ = {
+		884477441B081F6000EC3A9B /* JSQActivityKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = JSQActivityKit.framework;
-			remoteRef = 882754BE1B080E6800380554 /* PBXContainerItemProxy */;
+			remoteRef = 884477431B081F6000EC3A9B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		882754C11B080E6800380554 /* JSQActivityKitTests.xctest */ = {
+		884477461B081F6000EC3A9B /* JSQActivityKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = JSQActivityKitTests.xctest;
-			remoteRef = 882754C01B080E6800380554 /* PBXContainerItemProxy */;
+			remoteRef = 884477451B081F6000EC3A9B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -276,6 +302,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8844774A1B081F7700EC3A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSQActivityKit;
+			targetProxy = 884477491B081F7700EC3A9B /* PBXContainerItemProxy */;
+		};
 		88FE29931B08088B00A11178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88FE297B1B08088B00A11178 /* Example */;
@@ -342,7 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = JSQActivityKit;
+				PRODUCT_NAME = ActivityKit;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +412,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JSQActivityKit;
+				PRODUCT_NAME = ActivityKit;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -393,9 +424,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = JSQActivityKit;
+				PRODUCT_NAME = ActivityKit;
 			};
 			name = Debug;
 		};
@@ -404,9 +435,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = JSQActivityKit;
+				PRODUCT_NAME = ActivityKit;
 			};
 			name = Release;
 		};
@@ -425,7 +456,7 @@
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQActivityKit.app/JSQActivityKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityKit.app/ActivityKit";
 			};
 			name = Debug;
 		};
@@ -440,7 +471,7 @@
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSQActivityKit.app/JSQActivityKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityKit.app/ActivityKit";
 			};
 			name = Release;
 		};
