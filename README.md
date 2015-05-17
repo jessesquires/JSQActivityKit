@@ -4,11 +4,17 @@
 
 ## About
 
-> TODO:
+A Swift framework of [`UIActivity`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIActivity_Class/index.html) classes for sharing and performing actions with [`UIActivityViewController`](http://nshipster.com/uiactivityviewcontroller/).
+
+Current activities:
+
+* Safari
+* Instagram
 
 ## Requirements
 
-> TODO:
+* iOS 8.0
+* Swift 1.1
 
 ## Installation
 
