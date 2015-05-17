@@ -45,6 +45,18 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: UIActivity overrides
 
+
+
+    // MARK: Document interaction controller delegate
+
+    public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
+        activityDidFinish(true)
+    }
+    
+}
+
+extension InstagramActivity {
+
     public override class func activityCategory() -> UIActivityCategory {
         return .Share
     }
@@ -99,10 +111,4 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
         }
     }
 
-    // MARK: Document interaction controller delegate
-
-    public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
-        activityDidFinish(true)
-    }
-    
 }
