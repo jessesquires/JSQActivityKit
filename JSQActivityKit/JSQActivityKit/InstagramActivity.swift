@@ -18,6 +18,7 @@
 
 import UIKit
 
+///  An Instagram sharing activity.
 public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDelegate {
 
     // MARK: Typealiases
@@ -45,39 +46,33 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: UIActivity overrides
 
-
-
-    // MARK: Document interaction controller delegate
-
-    public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
-        activityDidFinish(true)
-    }
-    
-}
-
-extension InstagramActivity {
-
+    ///  :nodoc:
     public override class func activityCategory() -> UIActivityCategory {
         return .Share
     }
 
+    ///  :nodoc:
     public override func activityTitle() -> String? {
         return title
     }
 
+    ///  :nodoc:
     public override func activityType() -> String? {
         return "com.instagram.exclusivegram"
     }
 
+    ///  :nodoc:
     public override func activityImage() -> UIImage? {
         return UIImage(named: "instagram", inBundle: NSBundle(forClass: InstagramActivity.self), compatibleWithTraitCollection: nil)
     }
 
+    ///  :nodoc:
     public override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         return UIApplication.sharedApplication().canOpenURL(NSURL(string: "instagram://app")!)
             && activityItems.filter { $0 is UIImage || $0 is NSData }.count != 0
     }
 
+    ///  :nodoc:
     public override func prepareWithActivityItems(activityItems: [AnyObject]) {
         for item in activityItems {
             if let image = item as? UIImage {
@@ -92,6 +87,7 @@ extension InstagramActivity {
         }
     }
 
+    ///  :nodoc:
     public override func performActivity() {
         let path = NSTemporaryDirectory().stringByAppendingPathComponent("instagram.igo")
         if !NSFileManager.defaultManager().createFileAtPath(path, contents: imageData, attributes: nil) {
@@ -111,4 +107,11 @@ extension InstagramActivity {
         }
     }
 
+    // MARK: Document interaction controller delegate
+
+    ///  :nodoc:
+    public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
+        activityDidFinish(true)
+    }
+    
 }

@@ -18,6 +18,7 @@
 
 import UIKit
 
+///  A Safari action activity.
 public class SafariActivity: UIActivity {
 
     // MARK: Properties
@@ -34,22 +35,27 @@ public class SafariActivity: UIActivity {
 
     // MARK: UIActivity overrides
 
+    ///  :nodoc:
     public override class func activityCategory() -> UIActivityCategory {
         return .Action
     }
 
+    ///  :nodoc:
     public override func activityTitle() -> String? {
         return title
     }
 
+    ///  :nodoc:
     public override func activityType() -> String? {
         return toString(SafariActivity.self)
     }
 
+    ///  :nodoc:
     public override func activityImage() -> UIImage? {
         return UIImage(named: "safari", inBundle: NSBundle(forClass: SafariActivity.self), compatibleWithTraitCollection: nil)
     }
 
+    ///  :nodoc:
     public override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         return activityItems.filter { item -> Bool in
             if let url = item as? NSURL {
@@ -59,10 +65,12 @@ public class SafariActivity: UIActivity {
             }.count != 0
     }
 
+    ///  :nodoc:
     public override func prepareWithActivityItems(activityItems: [AnyObject]) {
         url = activityItems.filter { $0 is NSURL }.first as? NSURL
     }
 
+    ///  :nodoc:
     public override func performActivity() {
         var completed = false
 
