@@ -13,7 +13,7 @@ Current activities:
 
 ## Requirements
 
-* iOS 8.0
+* iOS 8
 * Swift 1.1
 
 ## Installation
