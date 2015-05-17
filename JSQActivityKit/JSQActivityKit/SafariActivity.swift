@@ -32,7 +32,7 @@ public class SafariActivity: UIActivity {
 
     ///  Constructs a new `SafariActivity` instance with the specified title.
     ///
-    ///  :param: title The title to display for the activity. The default value is `"Open in Safari"`.
+    ///  :param: title The title to display for the activity.
     ///
     ///  :returns: A new `SafariActivity` instance.
     public init(title: String = "Open In Safari") {
@@ -83,7 +83,7 @@ public class SafariActivity: UIActivity {
         if let url = url {
             completed = UIApplication.sharedApplication().openURL(url)
         }
-
+        
         activityDidFinish(completed)
     }
     
