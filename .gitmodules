@@ -1,0 +1,4 @@
+[submodule "JSQActivityKit"]
+	path = JSQActivityKit
+	url = https://github.com/jessesquires/JSQActivityKit.git
+	branch = develop
