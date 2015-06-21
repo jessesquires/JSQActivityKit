@@ -36,30 +36,26 @@ class ViewController: UITableViewController {
         case 1:
             items.append(UIImage(named: "kitten.jpeg")!)
             items.append("#Kittens of Instagram.\nhttp://placekitten.com/g/600/600")
-            activities.append(InstagramActivity(presenter: { (controller: UIDocumentInteractionController) -> Void in
+            activities.append(InstagramActivity(presenter: { (controller: UIDocumentInteractionController) in
                 controller.presentOpenInMenuFromRect(tableView.cellForRowAtIndexPath(indexPath)!.frame, inView: tableView, animated: true)
-
-                // workaround for travis-ci Xcode 6.1
-                return
             }))
 
         default: break
         }
 
-        println("Selected \(activities.first)...")
+        print("Selected \(activities.first)...")
 
         let controller = UIActivityViewController(activityItems: items, applicationActivities: activities)
         controller.popoverPresentationController?.sourceView = tableView
         controller.popoverPresentationController?.sourceRect = tableView.cellForRowAtIndexPath(indexPath)!.frame
-
-        controller.completionWithItemsHandler = { (type: String!, completed: Bool, returnedItems: [AnyObject]!, error: NSError!) -> Void in
-            println("Type = \(type)")
-            println("Completed = \(completed)")
-            println("ReturnedItems = \(returnedItems)")
-            println("Error = \(error)")
+        controller.completionWithItemsHandler = { (type: String?, completed: Bool, returnedItems: [AnyObject]?, error: NSError?) -> Void in
+            print("Type = \(type)")
+            print("Completed = \(completed)")
+            print("ReturnedItems = \(returnedItems)")
+            print("Error = \(error)")
         }
 
         presentViewController(controller, animated: true, completion: nil)
-
+        
     }
 }

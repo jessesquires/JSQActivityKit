@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
    s.name = 'JSQActivityKit'
-   s.version = '1.0.1'
+   s.version = '2.0.0'
    s.license = 'MIT'
-   
+
    s.summary = 'Swift UIActivities for iOS'
    s.homepage = 'https://github.com/jessesquires/JSQActivityKit'
    s.documentation_url = 'http://jessesquires.com/JSQActivityKit'

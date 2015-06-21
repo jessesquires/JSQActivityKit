@@ -18,7 +18,8 @@
 
 import UIKit
 
-///  A Safari action activity subclass of `UIActivity`.
+
+/// A Safari action activity subclass of `UIActivity`.
 public class SafariActivity: UIActivity {
 
     // MARK: Properties
@@ -29,60 +30,60 @@ public class SafariActivity: UIActivity {
 
     // MARK: Initialization
 
-    ///  Constructs a new `SafariActivity` instance with the specified title.
-    ///
-    ///  :param: title The title to display for the activity.
-    ///
-    ///  :returns: A new `SafariActivity` instance.
+    /**
+    Constructs a new `SafariActivity` instance with the specified title.
+
+    - parameter title: The title to display for the activity.
+
+    - returns: A new `SafariActivity` instance.
+    */
     public init(title: String = "Open In Safari") {
         self.title = title
     }
 
     // MARK: UIActivity overrides
 
-    ///  :nodoc:
+    /// :nodoc:
     public override class func activityCategory() -> UIActivityCategory {
         return .Action
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityTitle() -> String? {
         return title
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityType() -> String? {
-        return toString(SafariActivity.self)
+        return String(SafariActivity.self)
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityImage() -> UIImage? {
         return UIImage(named: "safari", inBundle: NSBundle(forClass: SafariActivity.self), compatibleWithTraitCollection: nil)
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         return activityItems.filter { item -> Bool in
-            if let url = item as? NSURL {
-                return UIApplication.sharedApplication().canOpenURL(url)
-            }
-            return false
+            guard let url = item as? NSURL else { return false }
+            return UIApplication.sharedApplication().canOpenURL(url)
             }.count != 0
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func prepareWithActivityItems(activityItems: [AnyObject]) {
         url = activityItems.filter { $0 is NSURL }.first as? NSURL
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func performActivity() {
         var completed = false
 
         if let url = url {
             completed = UIApplication.sharedApplication().openURL(url)
         }
-
+        
         activityDidFinish(completed)
     }
     

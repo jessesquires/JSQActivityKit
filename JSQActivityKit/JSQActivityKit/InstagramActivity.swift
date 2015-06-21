@@ -18,14 +18,17 @@
 
 import UIKit
 
-///  An Instagram sharing activity subclass of `UIActivity`.
+
+/// An Instagram sharing activity subclass of `UIActivity`.
 public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDelegate {
 
     // MARK: Typealiases
 
-    ///  A closure that presents a document interaction controller.
-    ///
-    ///  :returns: The document interaction controller to present.
+    /**
+    A closure that presents a document interaction controller.
+
+    - returns: The document interaction controller to present.
+    */
     public typealias DocumentInteractionControllerPresenter = (UIDocumentInteractionController) -> Void
 
     // MARK: Properties
@@ -42,12 +45,14 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: Initialization
 
-    ///  Constructs a new `InstagramActivity` instance with the specified title and presenter.
-    ///
-    ///  :param: title     The title to display for the activity.
-    ///  :param: presenter The closure to call to present the document interaction controller.
-    ///
-    ///  :returns: A new `InstagramActivity` instance.
+    /**
+    Constructs a new `InstagramActivity` instance with the specified title and presenter.
+
+    - parameter title:     The title to display for the activity.
+    - parameter presenter: The closure to call to present the document interaction controller.
+
+    - returns: A new `InstagramActivity` instance.
+    */
     public init(title: String = "Instagram", presenter: DocumentInteractionControllerPresenter) {
         self.title = title
         self.presenter = presenter
@@ -55,40 +60,40 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: UIActivity overrides
 
-    ///  :nodoc:
+    /// :nodoc:
     public override class func activityCategory() -> UIActivityCategory {
         return .Share
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityTitle() -> String? {
         return title
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityType() -> String? {
         return "com.instagram.exclusivegram"
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func activityImage() -> UIImage? {
         return UIImage(named: "instagram", inBundle: NSBundle(forClass: InstagramActivity.self), compatibleWithTraitCollection: nil)
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         return UIApplication.sharedApplication().canOpenURL(NSURL(string: "instagram://app")!)
             && activityItems.filter { $0 is UIImage || $0 is NSData }.count != 0
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func prepareWithActivityItems(activityItems: [AnyObject]) {
         for item in activityItems {
             if let image = item as? UIImage {
                 imageData = UIImageJPEGRepresentation(image, 1.0)
             }
-            else if let data = item as? NSData {
-                imageData = UIImageJPEGRepresentation(UIImage(data: data, scale: 1.0), 1.0)
+            else if let data = item as? NSData, let image = UIImage(data: data, scale: 1.0) {
+                imageData = UIImageJPEGRepresentation(image, 1.0)
             }
             else if let text = item as? String {
                 caption = text
@@ -96,15 +101,15 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
         }
     }
 
-    ///  :nodoc:
+    /// :nodoc:
     public override func performActivity() {
         let path = NSTemporaryDirectory().stringByAppendingPathComponent("instagram.igo")
-        if !NSFileManager.defaultManager().createFileAtPath(path, contents: imageData, attributes: nil) {
+        guard NSFileManager.defaultManager().createFileAtPath(path, contents: imageData, attributes: nil) else {
             activityDidFinish(false)
             return
         }
 
-        documentInteractionController = UIDocumentInteractionController(URL: NSURL(fileURLWithPath: path)!)
+        documentInteractionController = UIDocumentInteractionController(URL: NSURL(fileURLWithPath: path))
         documentInteractionController?.UTI = activityType()
         documentInteractionController?.delegate = self
         if let caption = caption {
@@ -118,7 +123,7 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     // MARK: Document interaction controller delegate
 
-    ///  :nodoc:
+    /// :nodoc:
     public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
         activityDidFinish(true)
     }

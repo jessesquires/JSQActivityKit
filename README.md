@@ -16,7 +16,7 @@ Current activities:
 ## Requirements
 
 * iOS 8
-* Swift 1.1
+* Swift 2.0
 
 ## Installation
 
@@ -26,7 +26,7 @@ Current activities:
 use_frameworks!
 
 # For latest release in cocoapods
-pod 'JSQActivityKit'  
+pod 'JSQActivityKit'
 
 # Feeling adventurous? Get the latest on develop
 pod 'JSQActivityKit', :git => 'https://github.com/jessesquires/JSQActivityKit.git', :branch => 'develop'
