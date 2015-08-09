@@ -103,7 +103,7 @@ public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDeleg
 
     /// :nodoc:
     public override func performActivity() {
-        let path = NSTemporaryDirectory().stringByAppendingPathComponent("instagram.igo")
+        let path = NSString(string: NSTemporaryDirectory()).stringByAppendingPathComponent("instagram.igo")
         guard NSFileManager.defaultManager().createFileAtPath(path, contents: imageData, attributes: nil) else {
             activityDidFinish(false)
             return
