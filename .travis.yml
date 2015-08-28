@@ -7,5 +7,5 @@ before_install:
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 
 script: 
-- xctool clean build test -workspace JSQActivityKit.xcworkspace -scheme Example -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
-- xcodebuild clean build test -project JSQActivityKit/JSQActivityKit.xcodeproj -scheme JSQActivityKit -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
+- xctool clean build test -workspace JSQActivityKit.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xcodebuild clean build test -project JSQActivityKit/JSQActivityKit.xcodeproj -scheme JSQActivityKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
