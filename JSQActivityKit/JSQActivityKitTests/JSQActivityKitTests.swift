@@ -33,19 +33,4 @@ class JSQActivityKitTests: XCTestCase {
         XCTAssertNotNil(safari.activityImage())
     }
 
-    func test_SafariActivity_CanPerformAction_Success() {
-        let safari = SafariActivity()
-
-        let items = [NSURL(string: "http://www.jessesquires.com")!]
-
-        XCTAssertTrue(safari.canPerformWithActivityItems(items))
-    }
-
-    func test_SafariActivity_CanPerformAction_Failure() {
-        let safari = SafariActivity()
-
-        let items = ["not a url"]
-
-        XCTAssertFalse(safari.canPerformWithActivityItems(items))
-    }
 }

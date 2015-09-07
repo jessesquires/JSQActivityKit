@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88FE29551B0806C200A11178"
+               BlueprintIdentifier = "88A635BE1B9E3042005D0158"
                BuildableName = "JSQActivityKit.framework"
                BlueprintName = "JSQActivityKit"
-               ReferencedContainer = "container:JSQActivityKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88FE29601B0806C200A11178"
-               BuildableName = "JSQActivityKitTests.xctest"
-               BlueprintName = "JSQActivityKitTests"
                ReferencedContainer = "container:JSQActivityKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,13 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88FE29601B0806C200A11178"
+               BlueprintIdentifier = "88A635C81B9E3042005D0158"
                BuildableName = "JSQActivityKitTests.xctest"
                BlueprintName = "JSQActivityKitTests"
                ReferencedContainer = "container:JSQActivityKit.xcodeproj">
@@ -56,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FE29551B0806C200A11178"
+            BlueprintIdentifier = "88A635BE1B9E3042005D0158"
             BuildableName = "JSQActivityKit.framework"
             BlueprintName = "JSQActivityKit"
             ReferencedContainer = "container:JSQActivityKit.xcodeproj">
@@ -78,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FE29551B0806C200A11178"
+            BlueprintIdentifier = "88A635BE1B9E3042005D0158"
             BuildableName = "JSQActivityKit.framework"
             BlueprintName = "JSQActivityKit"
             ReferencedContainer = "container:JSQActivityKit.xcodeproj">
@@ -96,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FE29551B0806C200A11178"
+            BlueprintIdentifier = "88A635BE1B9E3042005D0158"
             BuildableName = "JSQActivityKit.framework"
             BlueprintName = "JSQActivityKit"
             ReferencedContainer = "container:JSQActivityKit.xcodeproj">

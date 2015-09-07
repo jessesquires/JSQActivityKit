@@ -7,132 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		882754C31B080EC100380554 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C21B080EC100380554 /* InstagramActivity.swift */; };
-		882754C51B080EF100380554 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C41B080EF100380554 /* SafariActivity.swift */; };
-		88A635B31B9E1F66005D0158 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FE29561B0806C200A11178 /* JSQActivityKit.framework */; };
-		88A635B41B9E1F71005D0158 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882754C61B080F2A00380554 /* Images.xcassets */; };
-		88FE295C1B0806C200A11178 /* JSQActivityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FE295B1B0806C200A11178 /* JSQActivityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FE29691B0806C200A11178 /* JSQActivityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29681B0806C200A11178 /* JSQActivityKitTests.swift */; };
+		88A635C31B9E3042005D0158 /* JSQActivityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A635C21B9E3042005D0158 /* JSQActivityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A635CA1B9E3042005D0158 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */; settings = {ASSET_TAGS = (); }; };
+		88A635CF1B9E3042005D0158 /* JSQActivityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635CE1B9E3042005D0158 /* JSQActivityKitTests.swift */; };
+		88A635DC1B9E3BE8005D0158 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DA1B9E3BE8005D0158 /* InstagramActivity.swift */; settings = {ASSET_TAGS = (); }; };
+		88A635DD1B9E3BE8005D0158 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DB1B9E3BE8005D0158 /* SafariActivity.swift */; settings = {ASSET_TAGS = (); }; };
+		88A635DF1B9E3C60005D0158 /* JSQSafari.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635DE1B9E3C60005D0158 /* JSQSafari.xcassets */; settings = {ASSET_TAGS = (); }; };
+		88A635E11B9E3C71005D0158 /* JSQInstagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635E01B9E3C71005D0158 /* JSQInstagram.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88A635B11B9E1F62005D0158 /* PBXContainerItemProxy */ = {
+		88A635CB1B9E3042005D0158 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 88FE294D1B0806C200A11178 /* Project object */;
+			containerPortal = 88A635B61B9E3042005D0158 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88FE29551B0806C200A11178;
+			remoteGlobalIDString = 88A635BE1B9E3042005D0158;
 			remoteInfo = JSQActivityKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		882754C21B080EC100380554 /* InstagramActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramActivity.swift; sourceTree = "<group>"; };
-		882754C41B080EF100380554 /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariActivity.swift; sourceTree = "<group>"; };
-		882754C61B080F2A00380554 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		88FE29561B0806C200A11178 /* JSQActivityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQActivityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88FE295A1B0806C200A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88FE295B1B0806C200A11178 /* JSQActivityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQActivityKit.h; sourceTree = "<group>"; };
-		88FE29611B0806C200A11178 /* JSQActivityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQActivityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88FE29671B0806C200A11178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88FE29681B0806C200A11178 /* JSQActivityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQActivityKitTests.swift; sourceTree = "<group>"; };
+		88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQActivityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A635C21B9E3042005D0158 /* JSQActivityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQActivityKit.h; sourceTree = "<group>"; };
+		88A635C41B9E3042005D0158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A635C91B9E3042005D0158 /* JSQActivityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQActivityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A635CE1B9E3042005D0158 /* JSQActivityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQActivityKitTests.swift; sourceTree = "<group>"; };
+		88A635D01B9E3042005D0158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A635DA1B9E3BE8005D0158 /* InstagramActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramActivity.swift; sourceTree = "<group>"; };
+		88A635DB1B9E3BE8005D0158 /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariActivity.swift; sourceTree = "<group>"; };
+		88A635DE1B9E3C60005D0158 /* JSQSafari.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JSQSafari.xcassets; sourceTree = "<group>"; };
+		88A635E01B9E3C71005D0158 /* JSQInstagram.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JSQInstagram.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88FE29521B0806C200A11178 /* Frameworks */ = {
+		88A635BB1B9E3042005D0158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88FE295E1B0806C200A11178 /* Frameworks */ = {
+		88A635C61B9E3042005D0158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A635B31B9E1F66005D0158 /* JSQActivityKit.framework in Frameworks */,
+				88A635CA1B9E3042005D0158 /* JSQActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88FE294C1B0806C200A11178 = {
+		88A635B51B9E3042005D0158 = {
 			isa = PBXGroup;
 			children = (
-				88FE29581B0806C200A11178 /* JSQActivityKit */,
-				88FE29651B0806C200A11178 /* JSQActivityKitTests */,
-				88FE29571B0806C200A11178 /* Products */,
+				88A635C11B9E3042005D0158 /* JSQActivityKit */,
+				88A635CD1B9E3042005D0158 /* JSQActivityKitTests */,
+				88A635C01B9E3042005D0158 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88FE29571B0806C200A11178 /* Products */ = {
+		88A635C01B9E3042005D0158 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88FE29561B0806C200A11178 /* JSQActivityKit.framework */,
-				88FE29611B0806C200A11178 /* JSQActivityKitTests.xctest */,
+				88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */,
+				88A635C91B9E3042005D0158 /* JSQActivityKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88FE29581B0806C200A11178 /* JSQActivityKit */ = {
+		88A635C11B9E3042005D0158 /* JSQActivityKit */ = {
 			isa = PBXGroup;
 			children = (
-				882754C61B080F2A00380554 /* Images.xcassets */,
-				882754C21B080EC100380554 /* InstagramActivity.swift */,
-				88FE295B1B0806C200A11178 /* JSQActivityKit.h */,
-				882754C41B080EF100380554 /* SafariActivity.swift */,
-				88FE29591B0806C200A11178 /* Supporting Files */,
+				88A635C41B9E3042005D0158 /* Info.plist */,
+				88A635DA1B9E3BE8005D0158 /* InstagramActivity.swift */,
+				88A635C21B9E3042005D0158 /* JSQActivityKit.h */,
+				88A635E01B9E3C71005D0158 /* JSQInstagram.xcassets */,
+				88A635DE1B9E3C60005D0158 /* JSQSafari.xcassets */,
+				88A635DB1B9E3BE8005D0158 /* SafariActivity.swift */,
 			);
 			path = JSQActivityKit;
 			sourceTree = "<group>";
 		};
-		88FE29591B0806C200A11178 /* Supporting Files */ = {
+		88A635CD1B9E3042005D0158 /* JSQActivityKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				88FE295A1B0806C200A11178 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88FE29651B0806C200A11178 /* JSQActivityKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				88FE29681B0806C200A11178 /* JSQActivityKitTests.swift */,
-				88FE29661B0806C200A11178 /* Supporting Files */,
+				88A635CE1B9E3042005D0158 /* JSQActivityKitTests.swift */,
+				88A635D01B9E3042005D0158 /* Info.plist */,
 			);
 			path = JSQActivityKitTests;
-			sourceTree = "<group>";
-		};
-		88FE29661B0806C200A11178 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88FE29671B0806C200A11178 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		88FE29531B0806C200A11178 /* Headers */ = {
+		88A635BC1B9E3042005D0158 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FE295C1B0806C200A11178 /* JSQActivityKit.h in Headers */,
+				88A635C31B9E3042005D0158 /* JSQActivityKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		88FE29551B0806C200A11178 /* JSQActivityKit */ = {
+		88A635BE1B9E3042005D0158 /* JSQActivityKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88FE296C1B0806C200A11178 /* Build configuration list for PBXNativeTarget "JSQActivityKit" */;
+			buildConfigurationList = 88A635D31B9E3042005D0158 /* Build configuration list for PBXNativeTarget "JSQActivityKit" */;
 			buildPhases = (
-				88FE29511B0806C200A11178 /* Sources */,
-				88FE29521B0806C200A11178 /* Frameworks */,
-				88FE29531B0806C200A11178 /* Headers */,
-				88FE29541B0806C200A11178 /* Resources */,
+				88A635BA1B9E3042005D0158 /* Sources */,
+				88A635BB1B9E3042005D0158 /* Frameworks */,
+				88A635BC1B9E3042005D0158 /* Headers */,
+				88A635BD1B9E3042005D0158 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -140,111 +127,112 @@
 			);
 			name = JSQActivityKit;
 			productName = JSQActivityKit;
-			productReference = 88FE29561B0806C200A11178 /* JSQActivityKit.framework */;
+			productReference = 88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		88FE29601B0806C200A11178 /* JSQActivityKitTests */ = {
+		88A635C81B9E3042005D0158 /* JSQActivityKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88FE296F1B0806C200A11178 /* Build configuration list for PBXNativeTarget "JSQActivityKitTests" */;
+			buildConfigurationList = 88A635D61B9E3042005D0158 /* Build configuration list for PBXNativeTarget "JSQActivityKitTests" */;
 			buildPhases = (
-				88FE295D1B0806C200A11178 /* Sources */,
-				88FE295E1B0806C200A11178 /* Frameworks */,
-				88FE295F1B0806C200A11178 /* Resources */,
+				88A635C51B9E3042005D0158 /* Sources */,
+				88A635C61B9E3042005D0158 /* Frameworks */,
+				88A635C71B9E3042005D0158 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88A635B21B9E1F62005D0158 /* PBXTargetDependency */,
+				88A635CC1B9E3042005D0158 /* PBXTargetDependency */,
 			);
 			name = JSQActivityKitTests;
 			productName = JSQActivityKitTests;
-			productReference = 88FE29611B0806C200A11178 /* JSQActivityKitTests.xctest */;
+			productReference = 88A635C91B9E3042005D0158 /* JSQActivityKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88FE294D1B0806C200A11178 /* Project object */ = {
+		88A635B61B9E3042005D0158 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hexed Bits";
 				TargetAttributes = {
-					88FE29551B0806C200A11178 = {
-						CreatedOnToolsVersion = 6.3.1;
+					88A635BE1B9E3042005D0158 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					88FE29601B0806C200A11178 = {
-						CreatedOnToolsVersion = 6.3.1;
+					88A635C81B9E3042005D0158 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 88FE29501B0806C200A11178 /* Build configuration list for PBXProject "JSQActivityKit" */;
+			buildConfigurationList = 88A635B91B9E3042005D0158 /* Build configuration list for PBXProject "JSQActivityKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 88FE294C1B0806C200A11178;
-			productRefGroup = 88FE29571B0806C200A11178 /* Products */;
+			mainGroup = 88A635B51B9E3042005D0158;
+			productRefGroup = 88A635C01B9E3042005D0158 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88FE29551B0806C200A11178 /* JSQActivityKit */,
-				88FE29601B0806C200A11178 /* JSQActivityKitTests */,
+				88A635BE1B9E3042005D0158 /* JSQActivityKit */,
+				88A635C81B9E3042005D0158 /* JSQActivityKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88FE29541B0806C200A11178 /* Resources */ = {
+		88A635BD1B9E3042005D0158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A635DF1B9E3C60005D0158 /* JSQSafari.xcassets in Resources */,
+				88A635E11B9E3C71005D0158 /* JSQInstagram.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88FE295F1B0806C200A11178 /* Resources */ = {
+		88A635C71B9E3042005D0158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A635B41B9E1F71005D0158 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88FE29511B0806C200A11178 /* Sources */ = {
+		88A635BA1B9E3042005D0158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882754C51B080EF100380554 /* SafariActivity.swift in Sources */,
-				882754C31B080EC100380554 /* InstagramActivity.swift in Sources */,
+				88A635DD1B9E3BE8005D0158 /* SafariActivity.swift in Sources */,
+				88A635DC1B9E3BE8005D0158 /* InstagramActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88FE295D1B0806C200A11178 /* Sources */ = {
+		88A635C51B9E3042005D0158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FE29691B0806C200A11178 /* JSQActivityKitTests.swift in Sources */,
+				88A635CF1B9E3042005D0158 /* JSQActivityKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88A635B21B9E1F62005D0158 /* PBXTargetDependency */ = {
+		88A635CC1B9E3042005D0158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88FE29551B0806C200A11178 /* JSQActivityKit */;
-			targetProxy = 88A635B11B9E1F62005D0158 /* PBXContainerItemProxy */;
+			target = 88A635BE1B9E3042005D0158 /* JSQActivityKit */;
+			targetProxy = 88A635CB1B9E3042005D0158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		88FE296A1B0806C200A11178 /* Debug */ = {
+		88A635D11B9E3042005D0158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +252,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -275,7 +263,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -293,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		88FE296B1B0806C200A11178 /* Release */ = {
+		88A635D21B9E3042005D0158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -334,67 +321,59 @@
 			};
 			name = Release;
 		};
-		88FE296D1B0806C200A11178 /* Debug */ = {
+		88A635D41B9E3042005D0158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JSQActivityKit/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_DYLIB_INSTALL_NAME = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		88FE296E1B0806C200A11178 /* Release */ = {
+		88A635D51B9E3042005D0158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JSQActivityKit/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_DYLIB_INSTALL_NAME = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		88FE29701B0806C200A11178 /* Debug */ = {
+		88A635D71B9E3042005D0158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = JSQActivityKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		88FE29711B0806C200A11178 /* Release */ = {
+		88A635D81B9E3042005D0158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JSQActivityKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -402,34 +381,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88FE29501B0806C200A11178 /* Build configuration list for PBXProject "JSQActivityKit" */ = {
+		88A635B91B9E3042005D0158 /* Build configuration list for PBXProject "JSQActivityKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88FE296A1B0806C200A11178 /* Debug */,
-				88FE296B1B0806C200A11178 /* Release */,
+				88A635D11B9E3042005D0158 /* Debug */,
+				88A635D21B9E3042005D0158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88FE296C1B0806C200A11178 /* Build configuration list for PBXNativeTarget "JSQActivityKit" */ = {
+		88A635D31B9E3042005D0158 /* Build configuration list for PBXNativeTarget "JSQActivityKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88FE296D1B0806C200A11178 /* Debug */,
-				88FE296E1B0806C200A11178 /* Release */,
+				88A635D41B9E3042005D0158 /* Debug */,
+				88A635D51B9E3042005D0158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88FE296F1B0806C200A11178 /* Build configuration list for PBXNativeTarget "JSQActivityKitTests" */ = {
+		88A635D61B9E3042005D0158 /* Build configuration list for PBXNativeTarget "JSQActivityKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88FE29701B0806C200A11178 /* Debug */,
-				88FE29711B0806C200A11178 /* Release */,
+				88A635D71B9E3042005D0158 /* Debug */,
+				88A635D81B9E3042005D0158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88FE294D1B0806C200A11178 /* Project object */;
+	rootObject = 88A635B61B9E3042005D0158 /* Project object */;
 }
