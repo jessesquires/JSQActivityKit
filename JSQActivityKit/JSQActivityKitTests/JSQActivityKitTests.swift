@@ -23,13 +23,29 @@ import JSQActivityKit
 
 
 class JSQActivityKitTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
+
+    func test_SafariActivityInit() {
+        let safari = SafariActivity()
+
+        XCTAssertEqual(safari.activityTitle(), "Open In Safari")
+        XCTAssertEqual(safari.activityType(), String(SafariActivity.self))
+        XCTAssertEqual(SafariActivity.activityCategory(), UIActivityCategory.Action)
+        XCTAssertNotNil(safari.activityImage())
     }
 
+    func test_SafariActivity_CanPerformAction_Success() {
+        let safari = SafariActivity()
+
+        let items = [NSURL(string: "http://www.jessesquires.com")!]
+
+        XCTAssertTrue(safari.canPerformWithActivityItems(items))
+    }
+
+    func test_SafariActivity_CanPerformAction_Failure() {
+        let safari = SafariActivity()
+
+        let items = ["not a url"]
+
+        XCTAssertFalse(safari.canPerformWithActivityItems(items))
+    }
 }

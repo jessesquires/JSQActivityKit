@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		882754C31B080EC100380554 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C21B080EC100380554 /* InstagramActivity.swift */; };
 		882754C51B080EF100380554 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882754C41B080EF100380554 /* SafariActivity.swift */; };
-		882754C71B080F2A00380554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882754C61B080F2A00380554 /* Images.xcassets */; };
+		88A635B31B9E1F66005D0158 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FE29561B0806C200A11178 /* JSQActivityKit.framework */; };
+		88A635B41B9E1F71005D0158 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882754C61B080F2A00380554 /* Images.xcassets */; };
 		88FE295C1B0806C200A11178 /* JSQActivityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FE295B1B0806C200A11178 /* JSQActivityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FE29621B0806C200A11178 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FE29561B0806C200A11178 /* JSQActivityKit.framework */; };
 		88FE29691B0806C200A11178 /* JSQActivityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE29681B0806C200A11178 /* JSQActivityKitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88FE29631B0806C200A11178 /* PBXContainerItemProxy */ = {
+		88A635B11B9E1F62005D0158 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88FE294D1B0806C200A11178 /* Project object */;
 			proxyType = 1;
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FE29621B0806C200A11178 /* JSQActivityKit.framework in Frameworks */,
+				88A635B31B9E1F66005D0158 /* JSQActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				88FE29641B0806C200A11178 /* PBXTargetDependency */,
+				88A635B21B9E1F62005D0158 /* PBXTargetDependency */,
 			);
 			name = JSQActivityKitTests;
 			productName = JSQActivityKitTests;
@@ -202,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882754C71B080F2A00380554 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A635B41B9E1F71005D0158 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +236,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88FE29641B0806C200A11178 /* PBXTargetDependency */ = {
+		88A635B21B9E1F62005D0158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88FE29551B0806C200A11178 /* JSQActivityKit */;
-			targetProxy = 88FE29631B0806C200A11178 /* PBXContainerItemProxy */;
+			targetProxy = 88A635B11B9E1F62005D0158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,11 +341,12 @@
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				DYLIB_INSTALL_NAME_BASE = "";
 				INFOPLIST_FILE = JSQActivityKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -360,11 +361,12 @@
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				DYLIB_INSTALL_NAME_BASE = "";
 				INFOPLIST_FILE = JSQActivityKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
