@@ -15,7 +15,7 @@ Current activities:
 
 ## Requirements
 
-* iOS 8
+* iOS 8+
 * Swift 2.0
 
 ## Installation
@@ -58,7 +58,7 @@ Please follow these sweet [contribution guidelines](https://github.com/jessesqui
 
 ## Credits
 
-Created and maintained by [**@jesse_squires**](https://twitter.com/jesse_squires)
+Created and maintained by [**@jesse_squires**](https://twitter.com/jesse_squires).
 
 ## License
 
