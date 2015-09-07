@@ -20,7 +20,7 @@ import UIKit
 
 
 /// A Safari action activity subclass of `UIActivity`.
-public class SafariActivity: UIActivity {
+public final class SafariActivity: UIActivity {
 
     // MARK: Properties
 

@@ -20,7 +20,7 @@ import UIKit
 
 
 /// An Instagram sharing activity subclass of `UIActivity`.
-public class InstagramActivity: UIActivity, UIDocumentInteractionControllerDelegate {
+public final class InstagramActivity: UIActivity, UIDocumentInteractionControllerDelegate {
 
     // MARK: Typealiases
 

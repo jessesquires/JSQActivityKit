@@ -33,4 +33,15 @@ class JSQActivityKitTests: XCTestCase {
         XCTAssertNotNil(safari.activityImage())
     }
 
+    func test_InstagramActivityInit() {
+        let insta = InstagramActivity { (controller) -> Void in
+            // do nothing
+        }
+
+        XCTAssertEqual(insta.activityTitle(), "Instagram")
+        XCTAssertEqual(insta.activityType(), "com.instagram.exclusivegram")
+        XCTAssertEqual(InstagramActivity.activityCategory(), UIActivityCategory.Share)
+        XCTAssertNotNil(insta.activityImage())
+    }
+
 }
