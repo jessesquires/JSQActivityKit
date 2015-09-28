@@ -1,6 +1,6 @@
 # JSQActivityKit
 
-[![Build Status](https://secure.travis-ci.org/jessesquires/JSQActivityKit.svg)](http://travis-ci.org/jessesquires/JSQActivityKit) [![Version Status](http://img.shields.io/cocoapods/v/JSQActivityKit.png)][docsLink] [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://secure.travis-ci.org/jessesquires/JSQActivityKit.svg)](http://travis-ci.org/jessesquires/JSQActivityKit) [![Version Status](https://img.shields.io/cocoapods/v/JSQActivityKit.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQActivityKit.svg)][mitLink]  [![Platform](https://img.shields.io/cocoapods/p/JSQActivityKit.svg)][docsLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 *Swift UIActivities for iOS*
 
@@ -68,5 +68,6 @@ Created and maintained by [**@jesse_squires**](https://twitter.com/jesse_squires
 
 *Please provide attribution, it is greatly appreciated.*
 
-[mitLink]:http://opensource.org/licenses/MIT
 [docsLink]:http://www.jessesquires.com/JSQActivityKit
+[podLink]:https://cocoapods.org/pods/JSQActivityKit
+[mitLink]:http://opensource.org/licenses/MIT
