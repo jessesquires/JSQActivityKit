@@ -20,7 +20,7 @@ Current activities:
 
 ## Installation
 
-#### [CocoaPods](http://cocoapods.org)
+#### [CocoaPods](http://cocoapods.org) (recommended)
 
 ````ruby
 use_frameworks!
