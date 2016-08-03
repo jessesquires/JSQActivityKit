@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
    s.name = 'JSQActivityKit'
-   s.version = '1.0.2'
+   s.version = '1.0.3'
    s.license = 'MIT'
 
    s.summary = 'Swift UIActivities for iOS'
@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
    s.platform = :ios, '8.0'
    s.frameworks = 'UIKit'
    s.requires_arc = true
+   s.deprecated = true
 end
