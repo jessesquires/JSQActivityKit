@@ -1,4 +1,8 @@
-# JSQActivityKit
+# :warning: DEPRECATED :warning:
+
+This library is no longer necessary, and thus no longer supported or developed.
+
+## JSQActivityKit
 
 [![Build Status](https://secure.travis-ci.org/jessesquires/JSQActivityKit.svg)](http://travis-ci.org/jessesquires/JSQActivityKit) [![Version Status](https://img.shields.io/cocoapods/v/JSQActivityKit.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQActivityKit.svg)][mitLink]  [![Platform](https://img.shields.io/cocoapods/p/JSQActivityKit.svg)][docsLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
