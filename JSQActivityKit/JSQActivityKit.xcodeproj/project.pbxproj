@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		88A635C31B9E3042005D0158 /* JSQActivityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A635C21B9E3042005D0158 /* JSQActivityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88A635CA1B9E3042005D0158 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */; settings = {ASSET_TAGS = (); }; };
+		88A635CA1B9E3042005D0158 /* JSQActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A635BF1B9E3042005D0158 /* JSQActivityKit.framework */; };
 		88A635CF1B9E3042005D0158 /* JSQActivityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635CE1B9E3042005D0158 /* JSQActivityKitTests.swift */; };
-		88A635DC1B9E3BE8005D0158 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DA1B9E3BE8005D0158 /* InstagramActivity.swift */; settings = {ASSET_TAGS = (); }; };
-		88A635DD1B9E3BE8005D0158 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DB1B9E3BE8005D0158 /* SafariActivity.swift */; settings = {ASSET_TAGS = (); }; };
-		88A635DF1B9E3C60005D0158 /* JSQSafari.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635DE1B9E3C60005D0158 /* JSQSafari.xcassets */; settings = {ASSET_TAGS = (); }; };
-		88A635E11B9E3C71005D0158 /* JSQInstagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635E01B9E3C71005D0158 /* JSQInstagram.xcassets */; settings = {ASSET_TAGS = (); }; };
+		88A635DC1B9E3BE8005D0158 /* InstagramActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DA1B9E3BE8005D0158 /* InstagramActivity.swift */; };
+		88A635DD1B9E3BE8005D0158 /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A635DB1B9E3BE8005D0158 /* SafariActivity.swift */; };
+		88A635DF1B9E3C60005D0158 /* JSQSafari.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635DE1B9E3C60005D0158 /* JSQSafari.xcassets */; };
+		88A635E11B9E3C71005D0158 /* JSQInstagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A635E01B9E3C71005D0158 /* JSQInstagram.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hexed Bits";
 				TargetAttributes = {
 					88A635BE1B9E3042005D0158 = {
@@ -245,8 +245,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -293,8 +295,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -355,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -375,6 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQActivityKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
