@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # :warning: DEPRECATED :warning:
 
 This library is no longer necessary, and thus no longer supported or developed.
